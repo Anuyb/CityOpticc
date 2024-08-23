@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.h-50 {
+    height: 230px;
+}
+.h-33{
+    height: 30%;
+}
+@media (min-width: 700px) {
+    .smm\:wrap {
+        flex: auto;
+        flex-wrap: nowrap;
+    }
+  }
