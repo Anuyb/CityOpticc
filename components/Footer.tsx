@@ -33,7 +33,7 @@ export default function Footer() {
         <dd className="order-first text-sm font-semibold tracking-tight text-blue-500">Instagram хаяг</dd>
       </div>
     </dl>
-    <dl className='text-gray-600 font-bold text-right'><br />Бүх эрх хуулиар хамгаалагдсан. 2020 он</dl>
+    <dl className='flex justify-center text-gray-600 font-bold text-right'><br />Бүх эрх хуулиар хамгаалагдсан. 2020 он</dl>
   </div>
 </div>
 
