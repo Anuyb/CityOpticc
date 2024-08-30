@@ -7,9 +7,9 @@ export default function Page() {
     <>
         <div className="md:col-span-1 p-2">
                       <div className="shadow-md md:block hidden">
-                          <div className="bg-white border relative shadow-sm">
+                          <div className="border-solid relative shadow-sm">
                               <a href="" id="searchAtag" className="hidden"></a>
-                              <input className="input w-full  p-4 text-sm" placeholder="Хайлт хийх" type="text" id="search"/>
+                              <input className="bg-white input w-full  p-4 text-sm" placeholder="Хайлт хийх" type="text" id="search"/>
                               <span className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer" >
                                   <span className="icon">
                                       <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.1">
