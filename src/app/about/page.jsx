@@ -11,7 +11,7 @@ export default async function Page() {
 
   return (
     <>
-    <h1 className='px-24 font-semibold text-2xl py-8 bg-slate-100'>Манай салбарууд</h1>
+    <h1 className='px-24 font-semibold text-2xl py-8 bg-slate-100 text-black'>Манай салбарууд</h1>
     <div className="container mx-auto mt-12 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {

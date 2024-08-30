@@ -17,13 +17,13 @@ export default function Page({branch}: {branch: Branch}) {
             />
           </div>
           <div className="w-full text-sm sm:w-1/2 p-5">
-            <h6 className="text-sm font-bold text-black">{branch.name}</h6>
-            <p className="text-sm text-black">{branch.location}</p>
+            <h6 className="text-sm font-bold text-white">{branch.name}</h6>
+            <p className="text-sm text-white">{branch.location}</p>
             <div className="flex items-center mt-4 text-sm text-black">
               <img src="http://cityoptic.mn/img/phone.svg" width="15" alt="" className="mr-2" />
               {/* <span>{branch.phone}</span> */}
             </div>
-            <div className="mt-4 text-sm text-black">
+            <div className="mt-4 text-sm text-white">
               <p className="font-bold">Цагийн хуваарь</p>
               <p>{branch.schedule}<br />Бя-Ня: 11:00-20:00</p>
             </div>

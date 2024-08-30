@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RxDotFilled } from 'react-icons/rx';
 
 function App() {
@@ -10,10 +10,20 @@ function App() {
     {
       url: 'http://cityoptic.mn/storage/uploads/banners/G6RsWqMRi3kVbogjDyh8QzjpkJQfR1vXP5RnEmei.jpeg',
     },
-   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // 3 seconds
+
+    return () => clearInterval(timer);
+  }, [slides.length]); 
+
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
@@ -24,18 +34,6 @@ function App() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-0 bg-center bg-cover duration-500'
       ></div>
-      
-      <div className='flex top-0 justify-center'>
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className={`text-2xl cursor-pointer ${currentIndex === slideIndex ? 'text-blue-500' : 'text-gray-400 border-black'}`}
-          >
-            <RxDotFilled />
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

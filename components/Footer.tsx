@@ -13,8 +13,8 @@ export default function Footer() {
             <dd className="order-first text-sm tracking-tight text-gray-500 sm:text-sm">Бидэнтэй холбогдох</dd>
           </div>
           <div className="mx-auto flex flex-col gap-y-0 border-t border-b border-gray-900 w-full p-4 flex-grow">
-            <dt className="text-base leading-7 text-white">/cityoptic</dt>
-            <dd className="order-first text-sm font-semibold tracking-tight text-blue-500"><a href="https://www.facebook.com/cityopticMongolia">Facbook хаяг</a></dd>
+          <dt className="text-base leading-7 text-white">/cityoptic</dt>
+          <dd className="order-first text-sm font-semibold tracking-tight text-blue-500"><a href="https://www.facebook.com/cityopticMongolia">Facbook хаяг</a></dd>
           </div>
           <div className="mx-auto flex flex-col gap-y-0 border border-gray-900 p-4 w-full flex-grow">
             <dt className="text-base leading-7 text-white">cityoptic</dt>
