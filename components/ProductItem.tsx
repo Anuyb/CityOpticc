@@ -16,8 +16,8 @@ export default function ProductItem({product}: {product: Product }) {
             <span className="text-xs font-medium text-black">{product.category}</span>
             <span className="text-xs font-medium text-black ml-2">{product.category1}</span>
           </div>
-            <Link  href={`/product/${product.slug}`} className="block mt-2 text-xs font-bold text-gray-900 ">{product.name}</Link>
-          <div className="mt-6 mb-10">
+            <Link  href={`/product/${product.slug}`} className="block mt-2 text-base font-bold text-gray-900 ">{product.name}</Link>
+          <div className="mt-3">
             <span className="text-sm font-bold">{product.price}₮</span>
           </div>
         </div>
